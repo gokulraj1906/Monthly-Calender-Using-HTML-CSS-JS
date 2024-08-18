@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body{
+    background-image: url(assets/background.webp);
+    background-size: 100%;
+  }
+</style>
+<body>
+    <div class="calendar">
+      <h1>Monthly Calendar</h1>
+        <div class="calendar-header">
+            <button id="prev" onclick="prevMonth()">&#8249;</button>
+            <div id="month-year"></div>
+            <button id="next" onclick="nextMonth()">&#8250;</button>
+        </div>
+        <table id="calendar-table">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
